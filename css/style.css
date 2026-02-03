@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+body.guidelines * 
+{
+    border: 1px dashed white;
+}
+
 body {
 	margin: 0 auto;
 	font-family: 'TikTok Sans', sans-serif;
@@ -31,10 +36,31 @@ video {
 	top: 0;
 	left: 0;
 	right: 0;
-
+	display: flex;
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
+	.icon-header{
+		color: white;
+		background-color: none;
+		padding: 0.5rem;
+	}
+	.text-header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.item{
+			padding: 0.3rem;
+			color: rgb(65, 68, 153);
+			font-size: 0.9rem;
+		}
+		.per-te{
+			color: #fff;
+			
+		}
+	}
 }
+
+
 
 /* Footer */
 
