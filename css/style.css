@@ -52,10 +52,33 @@ video {
 			padding: 0.3rem;
 			color: rgb(65, 68, 153);
 			font-size: 0.9rem;
-		}
+			}
 		.per-te{
 			color: #fff;
-			
+			position: relative;
+		.line{
+				position: absolute;
+				width:20px;
+				height: 2px;
+				background-color: #fff;
+				translate: -50%,-50%;
+				top: 90%;
+				right: 30%;
+			}
+				}
+		.action1{
+			position: relative;
+			.circle{
+				position:absolute;
+				width: 5px;
+				height: 5px;
+				background-color: rgba(255, 0, 0, 0.38);
+				border-radius: 2px;
+				translate: -50%,-50%;
+				bottom: 80%;
+				left: 90%;
+			}
+
 		}
 	}
 }
@@ -76,7 +99,7 @@ footer {
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
 	.footer-1{
-		font-size: 0.7rem;
+		font-size: 0.9rem;
 		padding: 5px;
 		display: flex;
 		flex-direction: column;
@@ -91,7 +114,7 @@ footer {
 		align-items: center;
 		justify-content: space-around;
 		background-color: black;
-		padding: 10px;
+		padding: 20px;
 		.footer-item{
 				color: gray;
 				display: flex;
@@ -107,14 +130,39 @@ footer {
 					.action{
 						color: #fff;
 					}
+					.action2{
+						
+						position: relative;
+
+						.circle-number{
+							position:absolute;
+							width: 15px;
+							height: 12px;
+							background-color: red;
+							border-radius: 5px;
+							translate: -50%,-50%;
+							bottom: 60%;
+							left: 70%;
+						}
+						.number{
+							position: absolute;
+							font-size: 10px;
+							color: white;
+							left: 2.5px;
+							
+						}
+					}
+
 		}
 
 		.footer-button{
-			width: 32px;
+			width: 35px;
 			height: 25px;
 			border-left: 2px solid rgb(43, 186, 226);
 			border-right: 2px solid fuchsia;
-			border-radius: 5px;
+			border-top: none;
+			border-bottom: none;
+			border-radius: 7px;
 			div{
 				font-size: 1rem;
 			}
@@ -144,11 +192,25 @@ footer {
 		border-radius: 20px;
 		display: flex;
 		width: 80%;
+		position: relative;
+		
 		img{
-			
+			position: relative;
 			width: 100%;
 			border-radius: 20px;
+			
+		
 		}
+			.circle+{
+				position: absolute;
+				width: 5px;
+				height: 5px;
+				background-color: rgb(230, 21, 21);
+				border-radius: 2px;
+				translate: -50%,-50%;
+				
+		}
+		
 	}
 
 		.sidebar-item{
@@ -159,10 +221,10 @@ footer {
 		text-align: center;
 		color: white;
 		 .logo1{
-			font-size: 1.3rem;
+			font-size: 1.5rem;
 		}
 		.stats{
-			font-size: 0.7rem;
+			font-size: 0.5rem;
 		}
 
 
